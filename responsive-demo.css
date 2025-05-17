@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* responsive hidden elements*/
+
+.button{
+    display: none;
+
+    width: 5.4375rem;       
+    height: 2.5rem;        
+
+    border-radius: 0.5rem; 
+
+    padding: 0.5rem 1rem; 
+
+    background-color: rgba(24, 116, 255, 1); 
+    color: #fff; 
+
+    border: none;       /* Optional: remove default border */
+    cursor: pointer;    /* Optional: pointer cursor on hover */
+    font-size: 1 rem; 
+}
+
+
+.header-references{
+    display: none;
+}
+
+/* header elements */
+
+.header-margin{
+    margin: 1rem;
+}
+
+.header-navbar {
+    
+    min-height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-navbar-container a{
+    text-decoration: none;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+
+    color: rgba(23, 25, 28, 1)
+}
+
+
+
+.header-logo{
+    width: 10rem;
+    height: auto;
+}
+
+.menu-icon{
+    width: 1.8rem;
+    height: auto;
+}
+
+
+.h1-with-background {
+    margin: 0;
+    height: clamp(10rem, 9.571rem + 2.143vw, 11.5rem);
+    width: 100%;
+    background: rgba(116, 182, 255, 0.15);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+    margin-top: 5.5rem;
+}
+
+
+.h1-with-background h1{
+
+    font-family: Rubik;    
+    text-align: center;
+    font-size: clamp(2rem, 1.714rem + 1.429vw, 3rem);
+    margin: 1.5rem 0 1rem 0;
+    line-height: auto;
+
+}
+
+.header-content{
+    width: 100%;
+}
+
+.header-poster {
+    width: 100%;
+
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+
+    border-radius: 1rem;
+}
+
+.poster-container{
+    width: 100%;
+}
+
+
+
+.under-poster-txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.under-poster-txt h3{
+    text-align: center;
+    font-size: clamp(2rem, 1.714rem + 1.429vw, 3rem);
+    margin: 1.5rem 0 1rem 0;
+    line-height: auto;
+}
+
+
+.button-and-menu-icon {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+/* aside list of headings */
+
+.aside-margin{
+    margin: 1rem;
+    margin-bottom: 3rem;
+}
+
+.list-of-headings h3{
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0%;
+    
+    margin: 3rem 0 1.5rem 0;
+}
+
+.nav-list-headings {
+    list-style-type: disc;
+    list-style-position: inside;
+
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    letter-spacing: 0%;
+
+
+}
+
+
+/* main p and h */
+
+.main-margin {
+    margin: 1rem;
+}
+
+
+
+.main-container h3{
+
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0%;
+    margin-bottom: 1.5rem;   
+}
+
+.main-container p {
+   
+    font-family: Rubik;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+}
+
+.first-p-header-article-1 {
+   margin-bottom: 1.5rem;     
+}
+
+.article1-header{
+    margin-bottom: 3rem;
+}
+
+.text-box-header {
+    margin-top: 3rem;
+}
+
+
+/* media queries */
+
+@media (min-width: 768px) {
+
+    /* header navbar button */
+    .button{
+        display: inline-block;
+    }
+
+    /* font for main and header in p */
+    .font-for-p p{
+        line-height: 1.875rem;
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    /* menu-header-navbar */
+    .header-references{
+        display: flex;
+        gap: 2rem;
+
+    }
+
+    /* header h1 */
+
+    .h1-with-background {
+        margin-bottom: 3rem;
+        margin-top: 6rem;
+    }
+
+    /* for alignment of text */
+
+    .under-poster-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* font for main and header in p */
+    .font-for-p {
+        width: 43.875rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* header poster width */
+    .header-poster{
+        width: 64rem;
+    }
+
+    /* header navbar width */
+
+    .header-navbar{
+        width: 64rem;
+    }
+
+    .header-navbar-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .list-of-headings h3{
+        margin: 4rem 0 1.5rem 0;
+    }
+
+
+    /* responsiveness for aside-list */
+    .aside-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .list-of-headings {
+        width: 43.875rem;
+    }
+
+    .aside-margin{
+        margin-bottom: 4rem;
+    }
+
+    /* main container */
+    .main-container p{
+        font-size: 1.125rem;
+    }
+
+    .article1-header{
+        margin-bottom: 4rem;
+    }
+
+    .text-box-header {
+        margin-top: 4rem;
+    }
+
+    .main-margin {
+        margin: 0 1rem;
+        
+        display: flex;
+        justify-content: center;
+    }
+    
+    .main-container{
+        width: 43.875rem;
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+
+
+/* utilities */
+
+.margin-bottom-for-scrolling {
+    margin-top: 10000px;
+}
+
+.under-poster-txt p{
+    font-size: 1rem;
+    
+    font-family: Rubik;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    
+    margin-top: 1.5rem;
+}
+
